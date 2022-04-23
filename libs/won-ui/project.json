@@ -1,0 +1,23 @@
+{
+  "root": "libs/won-ui",
+  "sourceRoot": "libs/won-ui/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/won-ui/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/won-ui"],
+      "options": {
+        "jestConfig": "libs/won-ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
