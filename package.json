@@ -6,13 +6,14 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test",
+    "test": "nx run-many --all --target=test",
     "lint": "nx run-many --all --target=lint --fix --max-warnings=0",
     "prepare": "husky install"
   },
   "lint-staged": {
     "./**/*": [
-      "yarn lint"
+      "yarn lint",
+      "yarn test"
     ]
   },
   "dependencies": {
@@ -36,7 +37,8 @@
     "@nrwl/react": "14.0.2",
     "@nrwl/web": "14.0.2",
     "@nrwl/workspace": "14.0.2",
-    "@testing-library/react": "13.1.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
     "@types/jest": "27.4.1",
     "@types/node": "17.0.26",
     "@types/react": "18.0.6",
