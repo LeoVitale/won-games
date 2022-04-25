@@ -6,5 +6,6 @@ module.exports = {
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nrwl/next/babel'] }]
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/ecommerce'
+  coverageDirectory: '../../coverage/apps/ecommerce',
+  setupFilesAfterEnv: ['./test-setup.ts']
 };
