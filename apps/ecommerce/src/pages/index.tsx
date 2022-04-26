@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
-const StyledPage = styled.div`
-  .page {
-  }
-`;
+const StyledPage = styled.div``;
 
 export function Index() {
   /*
