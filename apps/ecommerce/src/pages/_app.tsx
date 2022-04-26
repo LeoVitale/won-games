@@ -1,18 +1,23 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import './styles.css';
+import GlobalStyles from 'styles/global';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to ecommerce!</title>
+        <title>React Avançado - Boilerplate</title>
+        <link rel="shortcut icon" href="/img/icon-512.png" />
+        <link rel="apple-touch-icon" href="/img/icon-512.png" />
+        <meta
+          name="description"
+          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
+        />
       </Head>
-      <main className="app">
-        <Component {...pageProps} />
-      </main>
+      <GlobalStyles />
+      <Component {...pageProps} />
     </>
   );
 }
 
-export default CustomApp;
+export default App;

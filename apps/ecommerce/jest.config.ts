@@ -24,6 +24,7 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   displayName: 'ecommerce',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  coverageDirectory: '../../coverage/apps/ecommerce',
   moduleNameMapper: {
     // Handle module aliases (this will be automatically configured for you soon)
     '^@/components/(.*)$': '<rootDir>/components/$1',
