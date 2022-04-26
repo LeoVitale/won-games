@@ -1,12 +1,14 @@
 {
   "name": "nx-won-games",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "private": true,
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
     "test": "nx run-many --all --target=test --bail=true --findRelatedTests=true",
+    "test:watch": "nx test --coverage=true --watch=true",
+    "test:coverage": "nx test --coverage=true --watchAll=false",
     "lint": "nx run-many --all --target=lint --fix --max-warnings=0",
     "prepare": "husky install"
   },
