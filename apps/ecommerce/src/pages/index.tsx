@@ -1,4 +1,4 @@
-import Main from 'components/Main';
+import { Main } from '@nx-won-games/won-ui';
 
 const Index = () => {
   return <Main />;
