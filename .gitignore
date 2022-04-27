@@ -39,5 +39,5 @@ testem.log
 Thumbs.db
 
 # sw stuff
-public/sw.js
-public/workbox-*.js
+sw.js
+workbox-*.js

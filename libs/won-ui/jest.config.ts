@@ -22,6 +22,7 @@ const customJestConfig = {
   displayName: 'won-ui',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   coverageDirectory: '../../coverage/libs/won-ui',
+  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!**/node_modules/**', '!src/**/*.stories.tsx', '!src/**/index.ts'],
   testEnvironment: 'jest-environment-jsdom',
 }
 
