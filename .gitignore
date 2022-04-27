@@ -37,3 +37,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# sw stuff
+public/sw.js
+public/workbox-*.js
