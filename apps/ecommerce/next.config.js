@@ -1,19 +1,25 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
+const withPWA = require('next-pwa');
+const runtimeCaching = require('next-pwa/cache');
 const withNx = require('@nrwl/next/plugins/with-nx');
 
-/**
- * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
- **/
-const nextConfig = {
-  nx: {
-    // Set this to true if you would like to to use SVGR
-    // See: https://github.com/gregberge/svgr
-    svgr: false
-  },
-  swcMinify: true,
-  compiler: {
-    styledComponents: true
-  }
-};
+const isProduction = process.env.NODE_ENV === 'production';
 
-module.exports = withNx(nextConfig);
+module.exports = withPWA(
+  withNx({
+    nx: {
+      // Set this to true if you would like to to use SVGR
+      // See: https://github.com/gregberge/svgr
+      svgr: false
+    },
+    pwa: {
+      disable: !isProduction,
+      dest: 'public',
+      runtimeCaching
+    },
+    swcMinify: true,
+    compiler: {
+      styledComponents: true
+    }
+  })
+);
