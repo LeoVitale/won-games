@@ -1,5 +1,4 @@
 import GlobalStyles from './styles/global';
+import Main from './lib/main';
 
-export * from './lib/won-ui';
-
-export { GlobalStyles };
+export { GlobalStyles, Main };
