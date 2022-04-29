@@ -46,6 +46,7 @@
     "@nrwl/storybook": "^14.0.3",
     "@nrwl/web": "14.0.3",
     "@nrwl/workspace": "14.0.3",
+    "@nx-extend/strapi": "^2.1.0",
     "@storybook/addon-essentials": "~6.4.12",
     "@storybook/builder-webpack5": "~6.4.12",
     "@storybook/core-server": "~6.4.12",
