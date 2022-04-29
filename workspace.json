@@ -3,6 +3,7 @@
   "projects": {
     "ecommerce": "apps/ecommerce",
     "ecommerce-e2e": "apps/ecommerce-e2e",
+    "ecommerce-api": "apps/ecommerce-api",
     "won-ui": "libs/won-ui"
   }
 }
