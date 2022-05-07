@@ -37,7 +37,7 @@
       "repeatable": true,
       "pluginOptions": {},
       "component": "page.social-links",
-      "required": true
+      "required": false
     },
     "description": {
       "pluginOptions": {},

@@ -2,8 +2,10 @@
   "version": 2,
   "projects": {
     "ecommerce": "apps/ecommerce",
-    "ecommerce-e2e": "apps/ecommerce-e2e",
     "ecommerce-api": "apps/ecommerce-api",
+    "ecommerce-e2e": "apps/ecommerce-e2e",
+    "landing-page": "apps/landing-page",
+    "landing-page-e2e": "apps/landing-page-e2e",
     "won-ui": "libs/won-ui"
   }
 }

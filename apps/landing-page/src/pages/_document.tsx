@@ -35,15 +35,8 @@ export default class CustomDocument extends Document {
 
   render() {
     return (
-      <Html lang="pt-br">
-        <Head>
-          <link
-            rel="preload"
-            href="/fonts/poppins-v9-latin-regular.woff2"
-            as="font"
-            crossOrigin=""
-          />
-        </Head>
+      <Html>
+        <Head />
         <body>
           <Main />
           <NextScript />
