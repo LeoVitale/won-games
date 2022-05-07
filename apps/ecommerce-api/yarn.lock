@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@_sh/strapi-plugin-ckeditor@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@_sh/strapi-plugin-ckeditor/-/strapi-plugin-ckeditor-1.0.8.tgz#8972cabc6966b39210af0a3556d76b771bc930ac"
-  integrity sha512-8ALlbB/4tGzpjhP9EobfhFXo0Rlrcq++5xl2O03/sAPRAMB7uryMZepiqVj1Ww4ysPsbtOXJdVtzZQU5e1Z8hQ==
+"@_sh/strapi-plugin-ckeditor@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@_sh/strapi-plugin-ckeditor/-/strapi-plugin-ckeditor-1.0.9.tgz#65e8ce477460801bf4e22e0c571fa65371ffb0c9"
+  integrity sha512-noWPQlnr1SvqVuji8Z0c6bMN/dYDBumMRohlTv4VJ/uWEuIv7AMaApNkVrzCOfFsxRqVwVtXtnwwVjC03pIaxw==
   dependencies:
     "@ckeditor/ckeditor5-react" "5.0.0"
 
