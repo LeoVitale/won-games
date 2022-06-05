@@ -20,7 +20,7 @@
     ]
   },
   "dependencies": {
-    "@nrwl/next": "14.1.7",
+    "@nrwl/next": "14.1.9",
     "core-js": "^3.22.8",
     "next": "12.1.5",
     "next-pwa": "^5.5.2",
