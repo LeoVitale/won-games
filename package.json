@@ -6,12 +6,12 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
+    "test:dev": "nx test",
     "test": "nx run-many --all --target=test --bail=true --findRelatedTests=true",
     "test:watch": "nx test --coverage=true --watch=true",
     "test:coverage": "nx test --coverage=true --watchAll=false",
     "lint": "nx run-many --all --target=lint --fix --max-warnings=0",
-    "prepare": "husky install",
-    "release": "standard-version"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "./**/*": [
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@nrwl/next": "14.2.1",
-    "core-js": "^3.22.8",
+    "core-js": "^3.6.5",
     "next": "12.1.6",
     "next-pwa": "^5.5.4",
     "next-seo": "^5.4.0",
@@ -34,7 +34,7 @@
     "resize-observer-polyfill": "^1.5.1",
     "styled-components": "5.3.5",
     "styled-media-query": "^2.1.2",
-    "tslib": "^2.3.0"
+    "tslib": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "7.18.2",
@@ -46,7 +46,6 @@
     "@nrwl/eslint-plugin-nx": "14.2.1",
     "@nrwl/jest": "14.2.1",
     "@nrwl/linter": "14.2.1",
-    "@nrwl/nx-cloud": "14.0.5",
     "@nrwl/react": "14.2.1",
     "@nrwl/storybook": "^14.2.1",
     "@nrwl/web": "14.2.1",
@@ -65,13 +64,12 @@
     "@types/react": "18.0.12",
     "@types/react-dom": "18.0.5",
     "@types/react-is": "17.0.3",
+    "@types/react-slick": "^0.23.8",
     "@types/styled-components": "5.1.25",
     "@typescript-eslint/eslint-plugin": "~5.27.1",
     "@typescript-eslint/parser": "~5.27.1",
     "babel-jest": "28.1.1",
     "babel-loader": "8.2.5",
-    "babel-plugin-polyfill-corejs2": "^0.3.1",
-    "babel-plugin-polyfill-regenerator": "^0.3.1",
     "babel-plugin-styled-components": "2.0.7",
     "cypress": "^10.0.3",
     "eslint": "~8.17.0",
@@ -81,13 +79,13 @@
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "7.30.0",
-    "eslint-plugin-react-hooks": "4.5.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
     "husky": "^8.0.1",
     "jest": "28.1.1",
     "jest-environment-jsdom": "^28.1.1",
     "jest-styled-components": "^7.0.8",
-    "lint-staged": ">=12.4.1",
+    "lint-staged": "^13.0.0",
     "nx": "14.2.1",
     "prettier": "^2.5.1",
     "react-test-renderer": "18.1.0",
