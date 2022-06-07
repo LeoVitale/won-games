@@ -1,11 +1,10 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 
-import Index from '../pages/index';
+import WonUi from './won-ui';
 
-describe('Index', () => {
+describe('WonUi', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Index />);
+    const { baseElement } = render(<WonUi />);
     expect(baseElement).toBeTruthy();
   });
 });

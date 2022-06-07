@@ -1,24 +1,18 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import { GlobalStyles } from '@nx-won-games/won-ui';
+import './styles.css';
 
-function App({ Component, pageProps }: AppProps) {
+function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>React Avançado - Boilerplate</title>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta
-          name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
-        />
+        <title>Welcome to ecommerce!</title>
       </Head>
-      <GlobalStyles />
-      <Component {...pageProps} />
+      <main className="app">
+        <Component {...pageProps} />
+      </main>
     </>
   );
 }
 
-export default App;
+export default CustomApp;

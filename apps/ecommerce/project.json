@@ -1,5 +1,5 @@
 {
-  "root": "apps/ecommerce",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/ecommerce",
   "projectType": "application",
   "targets": {
