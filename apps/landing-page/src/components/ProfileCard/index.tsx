@@ -20,7 +20,7 @@ type socialLinks = {
 type Props = {
   name: string;
   role: string;
-  image: unknown;
+  image: string;
   socialLinks: socialLinks[];
   description: string;
 };
@@ -32,17 +32,18 @@ const ProfileCard: React.FC<Props> = ({
   socialLinks,
   description
 }) => {
-  console.log(image);
-
   return (
     <S.Card key={name}>
       <S.Image>
-        <source
-          srcSet={`${image.default.blurDataURL}?webp`}
-          type="image/webp"
+        <source srcSet={`/img/authors/${image}?webp`} type="image/webp" />
+        <source srcSet={`/img/authors/${image}`} type="image/png" />
+        <Image
+          width={250}
+          height={250}
+          src={`/img/authors/${image}?webp`}
+          loading="lazy"
+          alt={name}
         />
-        <source srcSet={image.default.blurDataURL} type="image/png" />
-        <Image width={250} height={250} src={image} loading="lazy" alt={name} />
       </S.Image>
       <S.Name>{name}</S.Name>
       <S.Role>{role}</S.Role>

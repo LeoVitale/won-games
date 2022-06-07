@@ -7,7 +7,7 @@ import * as S from './styles';
 type Props = {
   id: number;
   name: string;
-  image: unknown;
+  image: string;
   description: string;
 };
 
@@ -32,9 +32,15 @@ const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
     <S.Card>
       <S.User>
         <S.Image>
-          <source srcSet={`${image.default.src}?webp`} type="image/webp" />
-          <source srcSet={image.default.src} type="image/jpg" />
-          <Image src={image} loading="lazy" alt={name} />
+          <source srcSet={`/img/reviews/${image}?webp`} type="image/webp" />
+          <source srcSet={`/img/reviews/${image}`} type="image/png" />
+          <Image
+            width={50}
+            height={50}
+            src={`/img/reviews/${image}?webp`}
+            loading="lazy"
+            alt={name}
+          />
         </S.Image>
         <S.Name>{name}</S.Name>
       </S.User>
