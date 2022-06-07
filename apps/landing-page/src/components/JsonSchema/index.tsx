@@ -8,6 +8,7 @@ const JsonSchema = () => (
       providerName="Willian Justen Cursos"
       providerUrl="https://reactavancado.com.br/"
       description="Aprenda a criar um Ecommerce completo, indo do Backend ao Frontend utilizando tecnologias como ReactJS, NextJS, Strapi, GraphQL, Apollo e muito mais!"
+      provider={undefined}
     />
     <ProductJsonLd
       productName="Curso React Avançado"

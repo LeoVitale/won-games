@@ -1,4 +1,5 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle, css, ThemeProps } from 'styled-components';
+import { LandingTheme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -19,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  ${({ theme }) => css`
+  ${({ theme }: ThemeProps<LandingTheme>) => css`
     html {
       font-family: ${theme.font.family};
       font-size: 62.5%;

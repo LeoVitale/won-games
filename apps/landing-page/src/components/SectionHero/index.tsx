@@ -26,6 +26,7 @@ const SectionHero = () => (
               href="https://www.udemy.com/course/react-avancado/?couponCode=PROMOMAI22"
               onClick={onClick}
               wide
+              withPrice={false}
             >
               Comprar
             </Button>

@@ -40,6 +40,7 @@ const PricingBox = () => (
       href="https://www.udemy.com/course/react-avancado/?couponCode=PROMOMAI22"
       onClick={onClick}
       withPrice
+      wide={false}
     >
       <p>Comprar o curso</p>
       <div>

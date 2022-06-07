@@ -1,22 +1,21 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 import * as S from './styles';
 
 type Props = {
-  children: React.ReactNode;
-  wide?: boolean;
+  wide: boolean;
   href: string;
-  withPrice?: boolean;
+  withPrice: boolean;
   onClick: () => void;
 };
 
-const Button: React.FC<Props> = ({
+const Button = ({
   children,
   wide,
   withPrice,
   href,
   onClick
-}) => (
+}: PropsWithChildren<Props>) => (
   <S.ButtonWrapper
     href={href}
     wide={wide}

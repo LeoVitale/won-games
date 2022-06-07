@@ -6,7 +6,11 @@ import { FaDribbble, FaTwitter } from 'react-icons/fa';
 import * as S from './styles';
 import Image from 'next/image';
 
-const icons: unknown = {
+type Icons = {
+  [x: string]: JSX.Element;
+};
+
+const icons: Icons = {
   twitter: <FaTwitter />,
   github: <GrGithub />,
   dribbble: <FaDribbble />

@@ -42,4 +42,6 @@ const styles = {
   }
 };
 
+export type LandingTheme = typeof styles;
+
 export default styles;

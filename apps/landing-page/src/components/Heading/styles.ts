@@ -1,22 +1,23 @@
-import styled, { css, DefaultTheme } from 'styled-components';
+import styled, { css } from 'styled-components';
 import media from 'styled-media-query';
+import { LandingTheme } from 'styles/theme';
 
 import { Props } from '.';
 
 const wrapperModifiers = {
-  defaultColor: (theme: DefaultTheme) => css`
+  defaultColor: (theme: LandingTheme) => css`
     color: ${theme.colors.black};
   `,
 
-  reverseColor: (theme: DefaultTheme) => css`
+  reverseColor: (theme: LandingTheme) => css`
     color: ${theme.colors.white};
   `,
 
-  lineLeft: (theme: DefaultTheme) => css`
+  lineLeft: (theme: LandingTheme) => css`
     border-left: 7px solid ${theme.colors.secondary};
   `,
 
-  lineBottom: (theme: DefaultTheme) => css`
+  lineBottom: (theme: LandingTheme) => css`
     padding-left: 0;
     position: relative;
     margin-bottom: ${theme.spacings.medium};

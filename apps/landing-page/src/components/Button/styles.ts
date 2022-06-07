@@ -1,5 +1,6 @@
-import styled, { css, DefaultTheme } from 'styled-components';
+import styled, { css } from 'styled-components';
 import media from 'styled-media-query';
+import { LandingTheme } from 'styles/theme';
 
 type Props = {
   wide: boolean;
@@ -7,13 +8,13 @@ type Props = {
 };
 
 const buttonModifiers = {
-  withPrice: (theme: DefaultTheme) => css`
+  withPrice: (theme: LandingTheme) => css`
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: ${theme.spacings.xsmall};
   `,
-  wide: (theme: DefaultTheme) => css`
+  wide: (theme: LandingTheme) => css`
     padding: 1.3rem ${theme.spacings.medium};
 
     ${media.greaterThan('medium')`
