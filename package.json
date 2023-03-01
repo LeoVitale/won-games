@@ -47,7 +47,7 @@
     "@nrwl/jest": "14.5.7",
     "@nrwl/linter": "14.5.7",
     "@nrwl/react": "14.5.7",
-    "@nrwl/storybook": "^14.5.7",
+    "@nrwl/storybook": "^15.8.1",
     "@nrwl/web": "14.5.7",
     "@nrwl/workspace": "14.5.7",
     "@nx-extend/strapi": "^2.2.1",
